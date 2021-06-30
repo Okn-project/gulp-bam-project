@@ -16,13 +16,13 @@
     &__brand
         font-weight: 500
         color: #FFFFFF
-        font-style: 12px
+        font-size: 12px
         line-height: 12px
         text-align: center
         span
             display: block
             margin-top: 14px
-            font-style: 18px
+            font-size: 18px
             line-height: 18px
             text-transform: uppercase
     &__contact
@@ -39,3 +39,29 @@
             &:hover
                 text-decoration: none
                 color: #FFFFFF
+
+@media (max-width: 991px)
+.header
+    &__logo
+        width: 200px
+    &__brand
+        font-size: 12px
+        line-height: 12px
+        span
+            margin-top: 4px
+    &__contact
+        margin-bottom: 4px
+        font-size: 12px
+        line-height: 12px
+        button
+            width: 126px
+            height: 21px
+            font-size: 10px
+
+@media (max-width: 767px)
+    .header
+        flex-direction: column
+        align-items: center
+        min-height: 150px
+        &__contact
+            align-items: center
