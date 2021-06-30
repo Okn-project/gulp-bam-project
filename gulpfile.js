@@ -40,9 +40,9 @@ const { src, dest } = require("gulp"),
   clean_css = require("gulp-clean-css"),
   rename = require("gulp-rename"),
   imagemin = require("gulp-imagemin"),
-  webp = require("gulp-webp"),
-  webp_html = require("gulp-webp-html"),
-  webp_css = require("gulp-webpcss"),
+  // webp = require("gulp-webp"),
+  // webp_html = require("gulp-webp-html"),
+  // webp_css = require("gulp-webpcss"),
   { notify } = require("browser-sync");
 
 function clean(params) {
@@ -94,11 +94,13 @@ function icons() {
 }
 
 function html() {
-  return src(path.src.html)
-    .pipe(fileinclude())
-    .pipe(webp_html())
-    .pipe(dest(path.build.html))
-    .pipe(browsersync.stream());
+  return (
+    src(path.src.html)
+      .pipe(fileinclude())
+      // .pipe(webp_html())
+      .pipe(dest(path.build.html))
+      .pipe(browsersync.stream())
+  );
 }
 
 function css() {
