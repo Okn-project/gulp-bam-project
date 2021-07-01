@@ -1,0 +1,68 @@
+@import "variables"
+@import "forms"
+
+.consult
+    min-height: 680px
+    padding: 100px 0 108px 0
+    background: url('../img/images/consultBg.jpg') center center / cover no-repeat
+    .container
+        width: $cont-lg
+        margin: 0 auto
+    &__header
+        width: 680px
+        font-size: 36px
+        line-height: 54px
+        margin-bottom: 22px
+        font-weight: 700
+        text-align: left
+        color: #fff
+    &__subheader
+        width: 426px
+        font-size: 20px
+        line-height: 30px
+        margin-bottom: 36px
+        font-weight: 500
+        text-align: left
+        color: #fff
+
+@media (max-width: 991px)
+    .consult
+        min-height: 540px
+        .container
+            width: $cont-md
+        &__header
+            width: 500px
+            font-size: 31px
+            line-height: 40px
+
+        &__subheader
+            width: 426px
+            line-height: 25px
+@media (max-width: 767px)
+
+    .consult
+        padding: 60px 0 40px 0
+        min-height: 540px
+        .container
+            width: $cont-sm
+        &__header
+            width: 470px
+            font-size: 23px
+            line-height: 31px
+            margin: 0 auto
+            margin-bottom: 42px
+            text-align: center
+        &__subheader
+            width: 310px
+            font-size: 17px
+            line-height: 23px
+            margin: 0 auto
+            margin-bottom: 50px
+            text-align: center
+@media (max-width:575px)
+    .consult
+        .container
+            width: $cont-x-sm
+        &__header
+            width: $cont-x-sm
+            padding: 0 15px

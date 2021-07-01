@@ -266,6 +266,72 @@
   line-height: 14px;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 303px;
+  margin: 0 auto 0 0;
+}
+
+.form input:focus {
+  outline: none;
+  border: none;
+}
+
+.form__input {
+  border: none;
+  margin-bottom: 11px;
+  padding: 0 21px;
+}
+
+.form__input:nth-of-type(3) {
+  margin-bottom: 17px;
+}
+
+.form__submit {
+  width: 100%;
+  height: 58px;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 17px 29px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background: #C70101;
+  border: none;
+  border-radius: 2%;
+}
+
+.consult {
+  min-height: 680px;
+  padding: 100px 0 108px 0;
+  background: url("../img/images/consultBg.jpg") center center/cover no-repeat;
+}
+
+.consult .container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.consult__header {
+  width: 680px;
+  font-size: 36px;
+  line-height: 54px;
+  margin-bottom: 22px;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+}
+
+.consult__subheader {
+  width: 426px;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 36px;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+}
+
 @media (max-width: 991px) {
   .promo {
     padding: 21px 0 0 0;
@@ -326,6 +392,34 @@
 
   .advantages__item {
     width: 200px;
+  }
+
+  .form {
+    width: 250px;
+  }
+
+  .form__submit {
+    padding: 17px 0;
+    text-align: center;
+  }
+
+  .consult {
+    min-height: 540px;
+  }
+
+  .consult .container {
+    width: 680px;
+  }
+
+  .consult__header {
+    width: 500px;
+    font-size: 31px;
+    line-height: 40px;
+  }
+
+  .consult__subheader {
+    width: 426px;
+    line-height: 25px;
   }
 }
 
@@ -418,6 +512,37 @@
   .advantages__descr {
     font-size: 12px;
   }
+
+  .form {
+    margin: 0 auto;
+  }
+
+  .consult {
+    padding: 60px 0 40px 0;
+    min-height: 540px;
+  }
+
+  .consult .container {
+    width: 515px;
+  }
+
+  .consult__header {
+    width: 470px;
+    font-size: 23px;
+    line-height: 31px;
+    margin: 0 auto;
+    margin-bottom: 42px;
+    text-align: center;
+  }
+
+  .consult__subheader {
+    width: 310px;
+    font-size: 17px;
+    line-height: 23px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
@@ -446,5 +571,14 @@
 
   .advantages__item img {
     margin-bottom: 10px;
+  }
+
+  .consult .container {
+    width: 340px;
+  }
+
+  .consult__header {
+    width: 340px;
+    padding: 0 15px;
   }
 }
