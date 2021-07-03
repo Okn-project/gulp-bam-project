@@ -332,6 +332,20 @@
   color: #fff;
 }
 
+.slider {
+  padding: 81px 0;
+}
+
+.slider .container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.slider__wrapper {
+  width: 750px;
+  margin: 0 auto;
+}
+
 @media (max-width: 991px) {
   .promo {
     padding: 21px 0 0 0;
