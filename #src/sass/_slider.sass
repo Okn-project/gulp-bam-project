@@ -7,3 +7,48 @@
     &__wrapper
         width: 750px
         margin: 0 auto
+        position: relative
+
+        .slick-prev,.slick-next
+            position: absolute
+            border: none
+            top: 50%
+            transform: translateY(-50%)
+            left: -66px
+            background-color: #fff
+            img
+                width: 31px
+                height: 50px
+        .slick-next
+            left: auto
+            right: -66px
+
+@media (max-width: 991px)
+    .slider
+        .container
+            width: $cont-md
+        &__wrapper
+            width: $cont-md - 25px
+        &__item
+            img
+                width: 100%
+
+@media (max-width: 767px)
+    .slider
+        .container
+            width: $cont-sm
+        &__wrapper
+            width: $cont-sm - 25px
+        &__item
+            img
+                width: 100%
+
+@media (max-width:575px)
+    .slider
+        .container
+            width: $cont-x-sm
+        &__wrapper
+            width: $cont-x-sm - 25px
+        &__item
+            img
+                width: 100%
